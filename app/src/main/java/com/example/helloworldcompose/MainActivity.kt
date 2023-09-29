@@ -7,6 +7,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -45,7 +46,25 @@ fun App() {
             )
             Text(text = "Subscribe", color = Color.White)
             Text(text = "Hello", color = Color.White)
+            LazyRow(
+                horizontalArrangement = Arrangement.SpaceBetween,
+                modifier = Modifier.fillMaxWidth().padding(16.dp)
+            ) {
+                item {
+                    Text(text = "Stack:", color = Color.White)
+                    Text(text = "Java", color = Color.White)
+                    Text(text = "KOTLIN", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                    Text(text = "SUBSCRIBE", color = Color.White)
+                }
+            }
         }
     }
-
 }
